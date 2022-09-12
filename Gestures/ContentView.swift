@@ -13,15 +13,18 @@ struct ContentView: View {
         NavigationView {
             List {
                 Section(header: Text("Single Finger Gestures")) {
+                    
                     NavigationLink(destination: Tap()) { Text("Tap Gesture")}
                     NavigationLink(destination: LongPress()) { Text("Long Press Gesture")}
                     NavigationLink(destination: Drag()) { Text("Drag Gesture")}
                 }
                 Section(header: Text("Multiple Finger Gestures")) {
+                    
                     NavigationLink(destination: Rotation()) { Text("Rotation Gesture")}
                     NavigationLink(destination: Magnification()) { Text("Magnification Gesture")}
                 }
                 Section(header: Text("Composed Gestures")) {
+                    
                     NavigationLink(destination: Simultaneous()) { Text("Simultaneous Gesture")}
                     NavigationLink(destination: Exclusive()) { Text("Exclusive Gesture")}
                     NavigationLink(destination: Sequence()) { Text("Sequence Gesture")}
